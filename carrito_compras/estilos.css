@@ -1,0 +1,150 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+header{
+    height: 80px;
+    background-color: dodgerblue;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #fff;
+    padding: 0 30px;
+}
+
+.menu{
+    position: relative;
+}
+
+.menu:hover{
+    cursor: pointer;
+}
+#clean-cart:hover {
+     cursor: pointer;
+}
+.desplegable{
+    height: 400px;
+    overflow-y: auto;
+    min-height: 350px;
+    min-width: 500px;
+    border: 1px solid #000;
+    background-color: #fff;
+    position: absolute;
+    right: 0;
+    display: none;
+    padding: 20px;   
+}
+
+.desplegable table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.desplegable th{
+    color: #000;
+    border-bottom: 1px solid #000;
+}
+
+.menu:hover .desplegable{    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: default;
+}
+
+.desplegable button{
+    display: inline-block;
+    width: 100%;
+    background-color: #ff0000;
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: #fff;
+}
+
+#tabla-productos{
+    color: #000;
+}
+
+#tabla-productos td{
+    font-size: 12px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+
+
+main{
+    padding: 40px;
+    background-color: #f0f0f0;
+}
+
+main > h2{
+    margin: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.fila{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.tarjeta{
+    background-color: #fff;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+
+.tarjeta > div h3{
+    font-size: 1rem;
+    color: #336699;
+}
+
+.tarjeta > div small{
+    color: #888;
+    font-weight: bold;
+}
+
+.tarjeta > div div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.tarjeta > div div span{
+    font-weight: bold;
+    color: #f00;
+    font-size: 20px;
+}
+
+.tarjeta > div{
+    padding: 15px;
+}
+
+.tarjeta button{
+    padding: 10px;
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: rgb(62, 155, 248);
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.tarjeta button:hover{
+    cursor: pointer;
+    background-color: dodgerblue;
+}
+
